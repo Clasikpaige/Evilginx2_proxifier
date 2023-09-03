@@ -1,0 +1,23 @@
+---
+phishing_targets:
+  - domain: example.com
+    sslstrip: false
+    template: templates/example_template.html
+    credentials:
+      - username: user1
+        password: pass1
+      - username: user2
+        password: pass2
+
+  - domain: anotherexample.com
+    sslstrip: true
+    template: templates/another_template.html
+    credentials:
+      - username: user3
+        password: pass3
+
+web_server:
+  address: 0.0.0.0
+  port: 80
+
+phishing_domain: phishing-example.com
